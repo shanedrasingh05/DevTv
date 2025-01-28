@@ -65,7 +65,7 @@ export default function Authentication() {
           md={7}
           sx={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/5642102/pexels-photo-5642102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
+              "url(https://images.pexels.com/photos/5642102/pexels-photo-5642102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=)",
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
               t.palette.mode === "light"
