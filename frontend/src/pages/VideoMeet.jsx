@@ -14,7 +14,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 // import server from "../environment";
 
 // const server_url = server;
-const server_url = "http://localhost:8000";
+const server_url = `${process.env.REACT_APP_BACKEND_URL}`;
 
 
 var connections = {};
