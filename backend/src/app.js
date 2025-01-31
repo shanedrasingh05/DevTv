@@ -19,7 +19,14 @@ const io = connectToSocket(server);
 app.use(express.json());
 
 app.set("port", process.env.PORT || 8000);
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    methods: ["GET", "POST"],
+    allowedHeaders: ["*"],
+    credentials: true,
+  })
+);
 
 app.use(express.urlencoded({ limit: "40kb" }));
 app.use(express.urlencoded({ limit: "40kb", extended: true }));
